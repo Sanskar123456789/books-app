@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  display: flex;
+  border: 1px solid rgba(185, 184, 184, 0.61);
+  .details {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    .img {
+      margin-top: 150px;
+      img {
+        margin-left: 35%;
+      }
+    }
+    .data {
+      margin: auto;
+      width: 80%;
+
+      padding: 10px;
+      h2 {
+        color: rgb(43, 43, 43);
+        font-weight: 300;
+        //   margin-left: 20%;
+      }
+      p {
+        margin-top: 12px;
+        color: rgb(100, 99, 99);
+        font-weight: 300;
+        margin-left: 2%;
+      }
+      #image {
+        width: 100%;
+      }
+    }
+  }
+  .image {
+    width: 50%;
+    #image {
+      width: 100%;
+      height: 600px;
+    }
+  }
+}

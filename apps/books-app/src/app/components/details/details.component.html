@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="details">
+        <h3>Attic</h3>
+
+        <h1>Schedule an Online Notary Now</h1>
+        <form [formGroup]="form">
+            <label for="name" class="label">Fullname</label>
+            <br>
+            <input type="text" id="name" class="input" formControlName="name" placeholder="Input text with label">
+            <br>
+
+            <label for="email" class="label">Email</label>
+            <br>
+            <input type="email" id="email" class="input" formControlName="email" placeholder="Input text with label">
+            <br>
+
+            <label for="no" class="label">Phone Number</label>
+            <br>
+            <input type="email" id="no" class="input"  formControlName="phoneNumber" placeholder="Input text with label">
+            <br>
+
+            <div class="options">
+                <div class="criteria">
+                    <label for="name" class="O1">How many notarisations</label>
+                    <select class="op" formControlName="noOfSigners">
+                        <option selected disabled>select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                      <br>
+                    </div>
+                    <div class="criteria">
+                    <label for="name" class="O1">How many Signers</label>
+                      <select class ="op" formControlName="noOfNotarizations">
+                        <option selected disabled>select</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                        </select>
+                  </div>
+            </div>
+
+
+              <button type="submit" (click)="onSubmit()">Save and Continue</button>
+        </form>
+
+    </div>
+
+    <div class="image">
+        <img src="assets/img.PNG" id="image">
+    </div>
+</div>
